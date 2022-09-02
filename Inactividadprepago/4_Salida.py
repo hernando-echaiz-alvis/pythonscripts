@@ -12,7 +12,7 @@ import files_lib as fl
 from os import path
 from datetime import datetime
 import json
-import oracle_lib as ol
+#import oracle_lib as ol
 import s3_lib as s3l
 
 # Parametros
@@ -103,7 +103,7 @@ def inserta_tabla_scoring(df_ad, parametrosSalida, periodoEjecutado):
     port = pl.validar_parametros(parametrosSalida["tabla_prediccion"]["port"], "El parametro port es obligatorio.")
     sid = pl.validar_parametros(parametrosSalida["tabla_prediccion"]["sid"], "El parametro sid es obligatorio.")
     tablePrefix = pl.validar_parametros(parametrosSalida["tabla_prediccion"]["tablePrefix"], "El parametro tableName es obligatorio.")
-    ol.insertOracleDatabaseTableScoring(userName, password, host, port, sid, tablePrefix, rutaArchivoPreparada)
+    #ol.insertOracleDatabaseTableScoring(userName, password, host, port, sid, tablePrefix, rutaArchivoPreparada)
 
 def main():
     parser = argparse.ArgumentParser("salida")
@@ -120,6 +120,6 @@ def main():
     df_predict = carga_predict(parametrosSalida, periodo)
     df_salida = preparacion_salida(df_ad, df_predict, periodo)
     guardar_salida(df_salida, parametrosSalida, periodo)
-    inserta_tabla_scoring(df_salida, parametrosSalida, periodo)    
+    #inserta_tabla_scoring(df_salida, parametrosSalida, periodo)    
 
 main()
