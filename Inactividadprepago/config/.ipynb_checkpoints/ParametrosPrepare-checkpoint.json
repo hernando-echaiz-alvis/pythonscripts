@@ -1,0 +1,12 @@
+{
+    "name": {
+        "Name_Curated_Data": "data_curated_",
+        "Name_Analytic_Data": "data_analytic_"
+    },
+    "paths": {
+        "ExtCSV": ".csv",
+        "Ruta_Raw_Data": "Inactividadprepago/raw/datalabmlops/inactividadprepago/data/",
+        "Ruta_Curated_Data": "Inactividadprepago/curated/datalabmlops/inactividadprepago/data/",
+        "Ruta_Analytic_Data": "Inactividadprepago/analytic/datalabmlops/inactividadprepago/data/"
+    }
+}

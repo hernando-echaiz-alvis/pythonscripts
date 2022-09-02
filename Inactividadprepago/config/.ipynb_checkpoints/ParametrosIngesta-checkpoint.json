@@ -1,0 +1,18 @@
+{
+    "name": {
+        "Name_Raw_Data": "data_raw_"
+    },
+    "paths": {
+        "ExtCSV": ".csv",
+        "Ruta_Raw_Data": "Inactividadprepago/raw/datalabmlops/inactividadprepago/data/"
+    },
+    "tablon": {
+        "userName": "USRPREPROD",
+        "password": "TI_Soport3202010#",
+        "host": "40.117.126.38",
+        "port": "1521",
+        "sid": "DWO",
+        "tablePrefix": "C25595.MOD_INACPREP_INPUT",
+        "tableSuffix": ""
+    }
+}
